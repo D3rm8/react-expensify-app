@@ -8,7 +8,7 @@ const Header = () => (
 			Dashboard
 		</NavLink>
 		<NavLink to="/create" activeClassName="is-active">
-			Create
+			Create Expense
 		</NavLink>
 	</header>
 );
