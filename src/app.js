@@ -5,7 +5,7 @@ import AppRouter from "./routers/AppRouter";
 import configureStore from "./store/configureStore";
 import { startSetExpenses } from "./actions/expenses";
 import { setTextFilter } from "./actions/filters";
-import getVisisbleExpenses from "./selectors/expenses";
+import getVisibleExpenses from "./selectors/expenses";
 import "normalize.css/normalize.css";
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
@@ -27,7 +27,7 @@ store.dispatch(startSetExpenses()).then(() => {
 
 firebase.auth().onAuthStateChanged((user) => {
 	if (user) {
-		console.log("login");
+		console.log("log in");
 	} else {
 		console.log("log out");
 	}
