@@ -1,7 +1,7 @@
 import * as firebase from "firebase";
 
 const config = {
-	apiKey: process.env.FIREBAE_API_KEY,
+	apiKey: process.env.FIREBASE_API_KEY,
 	authDomain: process.env.FIREBASE_AUTH_DOMAIN,
 	databaseURL: process.env.FIREBASE_DATABASE_URL,
 	projectId: process.env.FIREBASE_PROJECT_ID,
@@ -12,6 +12,6 @@ const config = {
 firebase.initializeApp(config);
 
 const database = firebase.database();
-const GoogleAuthProvider = new firebase.auth.GoogleAuthProvider();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, GoogleAuthProvider, database as default };
+export { firebase, googleAuthProvider, database as default };
